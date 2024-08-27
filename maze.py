@@ -20,9 +20,9 @@ class Maze:
 
     def __create_cells(self):
         self._cells = [[Cell(self.__win) for i in range(self.__rows)] for i in range(self.__cols)]
-        for i in range(self.__cols):
-            for j in range(self.__rows):
-                self.draw_cell(i,j)
+        # for i in range(self.__cols): # Is initial gen necessary?
+        #     for j in range(self.__rows):
+        #         self.draw_cell(i,j)
 
     def draw_cell(self, i, j):
         if self.__win is None:
